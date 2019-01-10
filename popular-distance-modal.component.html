@@ -1,0 +1,27 @@
+<div class="out-div">
+    <div class="distance" *ngIf="distance!=-1; else unrecognize">
+          
+        <p>המרחק</p>
+        <h1 dir="rtl">{{distance}}
+            <span>ק''מ</span>
+        </h1>
+    </div>
+
+<ng-template  #unrecognize >
+    <h1 class="unrecognize">כתובת לא מזוהה</h1>
+</ng-template>
+
+    <div class="popular mt-5" *ngIf="popularDistance.Id">
+        <p>המרחק הפופולרי ביותר</p>
+        <h1 dir="rtl">{{popularDistance.Hits}}
+            <span>בקשות</span>
+        </h1>
+    </div>
+
+    <div class="popularPlaces" *ngIf="popularDistance.Id">
+        <span class="source-span " dir="rtl">{{popularDistance.Source}}
+            <span class="vertical">|</span>
+        </span>
+        <span class="popular-span">{{popularDistance.Destination}}</span>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="main-div" align="center">
+
+    <div>
+        <p class="title">מוצא</p>
+        <input type="text" dir="rtl" [(ngModel)]="source" class="form-control source-input">
+    </div>
+
+    <div>
+        <p class="title">יעד</p>
+        <input type="text" dir="rtl" [(ngModel)]="destination" class="form-control destination-input">
+    </div>
+
+    <p>.......................</p>
+    <button class="show-modal-btn btn" [disabled]="!validInput()" (click)="GetPopular();GetDistance() " data-toggle="modal" data-target="#distanceModal">הצג את המרחק</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="distanceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="btn btn-close-modal btn-secondary" data-dismiss="modal">סיום</button>
+                    <app-popular-distance-modal [popularDistance]="popularDistance" [distance]="distance" ></app-popular-distance-modal>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+@import './shared/variables.component.scss';
+
+.main-div{
+  width: 30%;
+  margin: auto;
+  margin-top:5em;
+}
+.show-modal-btn{
+background-color:$pink;
+color: white;
+width: 100%;
+}
+.modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+    background-color: rgba(32, 32, 32, 0.822);
+}
+p{
+    color: $lighter-gray;
+}
+input{
+    border-color: $lighter-gray;
+}
+.title{
+    text-align: right;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+.btn-close-modal{
+    background-color: $yellow;
+    color:white;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.source-input:focus{
+   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.15);
+   outline:none !important;
+}
+:host/deep/ .destination-input focus{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    outline:none !important;
+ }
+

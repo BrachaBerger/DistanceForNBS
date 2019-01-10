@@ -1,0 +1,48 @@
+
+@import '../shared/variables.component.scss';
+
+.distance ,.popular{
+    text-align: right;
+    margin-right: 40%;
+    margin-top: 6%;
+}
+
+.popularPlaces{
+    text-align: right;
+    margin-right: 40%;
+    margin-top:52px;
+}
+p,span{
+    color: $lighter-gray;
+}
+
+.vertical{
+    color: white;
+  }
+  .popular-span,.source-span{
+      color:$yellow;
+  }
+
+  .source-span{
+      float: right;
+  }
+
+  .source-span,.popular-span{
+      margin: 0.5em;
+  }
+  .popular-span{
+    float: right;
+    margin-right: 0;
+      }
+  h1{
+      float: right;
+      color:$yellow;
+      margin: 0;
+      span{
+          font-size: 15px;
+      }
+  }
+  .unrecognize{
+    float: inherit;
+    margin-top: 2em;
+  }
